@@ -76,5 +76,5 @@ document.addEventListener('click', () => {
 
 //show battery percent
 navigator.getBattery().then(battery => {
-  document.getElementById('battery').innerText = `باتری: ${Math.floor(battery.level * 100)}%`;
+  document.getElementById('battery').innerText = `باتری: %${Math.floor(battery.level * 100)}`;
 });

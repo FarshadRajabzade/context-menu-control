@@ -326,3 +326,31 @@ h1 {
   #context-menu { padding: 8px; }
   #context-menu li { font-size: 0.9em; padding: 8px 15px; }
 }
+
+
+#battery {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2em;
+  padding: 12px 20px;
+  border-radius: 12px;
+  color: #fff;
+  background: linear-gradient(45deg, #6b7280, #3b82f6, #06b6d4, #60a5fa);
+  background-size: 300%;
+  animation: batteryGradient 6s ease infinite;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3), 0 0 20px rgba(59, 130, 246, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+#battery:hover {
+  transform: scale(1.05); /* بزرگ شدن نرم هنگام هوور */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 30px rgba(59, 130, 246, 0.3);
+}
+
+#battery svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
