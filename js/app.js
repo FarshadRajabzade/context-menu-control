@@ -44,7 +44,7 @@ window.addEventListener('offline', () => {
 });
 
 //show online or offline alert for the first time
-if (navigator.onLine && lastStatus === 'offline') {
+if (navigator.onLine) {
   showToast({
     text: "خوش اومدی سلطان دوباره آنلاین شدی 😍",
     background: "green"
